@@ -16,7 +16,6 @@ parse_git_branch() {
 }
 #export PS1="\u@\h \W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 export PS1="\u@\h \[\033[01;35m\] \W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-alias buildcore='mvn -f ~/VividSeats/vivid-coreapi -Dmaven.test.skip=true clean install'
 
 export NVM_DIR="/Users/michael.fanger/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
