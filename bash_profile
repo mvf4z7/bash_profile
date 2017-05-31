@@ -1,10 +1,8 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export TERM=xterm-256color
-eval "$(ssh-agent -s)"
 
 #[[ -s ~/.bashrc ]] && source ~/.bashrc
-
 
 # Autocomplete Git commands and branches
 if [ -f ~/.git-completion.bash ]; then
@@ -19,5 +17,3 @@ export PS1="\[\033[01;35m\] \W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 export NVM_DIR="/Users/michael.fanger/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export EDITOR='subl -w'
