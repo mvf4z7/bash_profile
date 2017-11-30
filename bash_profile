@@ -17,7 +17,9 @@ parse_git_branch() {
 export PS1="\[\033[01;35m\] \W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # add go bin to path
-export PATH=$PATH:$(go env GOPATH)/bin
+if command -v go; then
+  export PATH=$PATH:$(go env GOPATH)/bin
+fi
 
 alias ll="ls -l"
 alias la="ls -la"
